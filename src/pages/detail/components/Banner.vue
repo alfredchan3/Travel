@@ -9,12 +9,15 @@
         </div>
       </div>
     </div>
-    <common-gallery :imgs="bannerImgs" v-show="showGallery" @close="handleGalleryClose"></common-gallery>
+    <fade>
+      <common-gallery :imgs="bannerImgs" v-show="showGallery" @close="handleGalleryClose"></common-gallery>
+    </fade>
   </div>
 </template>
 
 <script>
 import CommonGallery from 'common/gallery/Gallery'
+import Fade from 'common/fadeAnimation/Fade'
 export default {
   name: 'DetailBanner',
   props: {
@@ -36,7 +39,8 @@ export default {
     }
   },
   components: {
-    CommonGallery
+    CommonGallery,
+    Fade
   }
 }
 </script>

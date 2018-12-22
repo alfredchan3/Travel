@@ -22,5 +22,6 @@ npm run build --report
 - 移动端 1px 边框问题
 - 手机浏览器不支持promise 使用babel-polyfill
 - 使用 debounce
+- 修改为异步组件 按需加载
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
